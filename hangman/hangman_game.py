@@ -23,8 +23,10 @@ def play_hangman():
     no_of_tries = 5  # or maybe more?
     # pick a word from the words list to play
     word_to_play = select_word_for_hangman(words)
-    # thes
+    # these chars are what will be required as input.
+    # any other char entered is invalid
     required_chars = set(word_to_play)
+    # keep a list of all characters A-Z to compare
     all_chars = set(string.ascii_uppercase)
     used_chars = set()
 
