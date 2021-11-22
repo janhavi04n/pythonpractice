@@ -1,8 +1,9 @@
 """
 implement hangman game
-words_repo has a list of 500 words in english. we use this words for this game
+words_repo has a list of ~500 words in english. 
+we use this words for this game
 a player gets 5 life to guess the word
-if the player guess inside 5 tries you win
+if the player guess correctly inside 5 tries you win
 few words in words list has - or whitespace
 this words are not picked as it is not a valid hangman word
 """
@@ -29,8 +30,6 @@ def play_hangman():
     # keep a list of all characters A-Z to compare
     all_chars = set(string.ascii_uppercase)
     used_chars = set()
-
-
 
 
 if __name__ == '__main__':
