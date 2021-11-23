@@ -23,3 +23,8 @@ print(yamaha.show_details())
 
 honda = Car("Honda city")
 print(honda)
+# below line will displat TypeError as only the last defined
+# make_sound method of Car class can be available
+# other 2 are not available as overloadig is not available in python
+# honda.make_sound("beep", 20)
+honda.make_sound()

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-object orirnted practice
-understanding inheritence
+object orirnted
+inheritence
 """
 class Vehicle(object):
     def __init__(self, name, no_of_wheels=2):
@@ -32,3 +32,21 @@ class Car(Vehicle):
         # this is another way of calling super
         # instead of passing ClassName, self as
         # parameters
+        
+ 
+        
+# there is no overloading concept in python
+# if we define multiple methods with same name in a class
+# then python will only recognse the one added last
+# in below examples we can access only make_sound(self)
+# if we try to access the other 2 methods then we get the following error
+# TypeError: make_sound() takes 1 positional argument but 3 were given
+    def make_sound(self, sound):
+        print(sound)
+    
+    def make_sound(self, sound, times):
+        print(sound*times)
+        
+    def make_sound(self):
+        print("beep")
+        

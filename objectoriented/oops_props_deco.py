@@ -3,6 +3,8 @@
 understanding properties
 decorators
 """
+from datetme import datetime
+
 class Student(object):
     
     def __init__(self, name, grade, marks):
@@ -41,4 +43,25 @@ class Student(object):
 
 
     def __str__(self):
-        return "Student [Name: {0.name}, Grade: {0.grade}, Marks: {0.marks}]".format(self)       
+        return "Student [Name: {0.name}, Grade: {0.grade}, Marks: {0.marks}]".format(self)
+
+        
+    def show_results(self):
+        pass
+    
+
+# =============================================================================
+#     def go_to_school(self, func):
+#         def wrapper():
+#             if 8 <= datetime.now().hour < 13:
+#                 func()
+#             else:
+#                 print("do your homework")
+#             
+#         return wrapper
+#         
+#     
+#     def go_to_school():
+#         print("at school")
+# =============================================================================
+        
