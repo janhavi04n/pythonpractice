@@ -59,3 +59,19 @@ print(list(square))
 one_to_ten = [i for i in range(1, 11)]
 sum_of = reduce(lambda x,y : x+y, one_to_ten)
 print(sum_of)
+
+
+# this is from w3schools
+# lambda can be used as an anonymus function inside another function
+# below myfunc takes 1 argument `n` and this argument is then
+# multiplied by another unknown number
+
+def myfunc(n):
+    return lambda a: a*n
+
+
+double = myfunc(2)
+print(double(5))
+
+triple = myfunc(3)
+print(triple(5))
