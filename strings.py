@@ -34,7 +34,8 @@ print(letters[:-9:-1])
 print("Hello " * 5)
 
 
-
+str = "# women who code !"
+print(str.strip(".#! "))
 
 
 
