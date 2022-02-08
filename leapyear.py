@@ -15,4 +15,4 @@ is_leap = (year % 4 == 0 and (year % 400 == 0 or year % 100 != 0))
 if is_leap:
     print('{} is a leap year'.format(year))
 else:
-    print('{} is not a leap year'.format(year1980))
+    print('{} is not a leap year'.format(year))
