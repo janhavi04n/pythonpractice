@@ -11,6 +11,7 @@ def split_and_join(line):
             return new_line
         return "-".join(new_line)
 
+
 if __name__ == "__main__":
     line = input("enter a line ")
     print(split_and_join(line))

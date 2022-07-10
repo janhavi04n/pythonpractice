@@ -70,7 +70,7 @@ for i in fib_sequence:
 # this is similar to list comprehension except the 
 # comprehension logic is enclosed in paranthesis
 # instead of square brackets
-squares_gen = (x*x for x in range(1,11))
+squares_gen = (x*x for x in range(1, 11))
 print(squares_gen)
 
 # we can print the values in squares_gen either by calling

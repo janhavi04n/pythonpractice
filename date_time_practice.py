@@ -4,12 +4,13 @@ practice for date, datetime, calendar modules
 """
 import time
 import datetime
-import pytz
+import locale
 # from time import perf_counter as pc
 # from time import monotonic as mo
 # from time import time as tm
 # from time import process_time as pt
 
+locale.setlocale(locale.LC_ALL, '')
 
 # prints the UTC time - epoch time
 print(time.gmtime(0))
@@ -36,6 +37,11 @@ print(datetime.datetime.utcnow())
 print(datetime.datetime.today())
 
 
-    
-
-    
+# timedelta - difference bw 2 dates
+past = datetime.date(1947, 8, 15)
+today = datetime.date.today()
+print(past)
+print(today)
+# returns a timedelta object
+no_of_days = today - past
+print(no_of_days)
